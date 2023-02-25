@@ -1,0 +1,33 @@
+In diesem Projekt wurde eine Webseite im Berreich Support-Fraud nachgebaut.
+Bei diesem Phänomen wird Betroffen auf Webseiten eine vermeintliche Virusinfizierung ihres Computers suggeriert.
+Damit die Authentizität gewahrt wird setzt die Täterschaft auf Möglichkeiten wie:
+              - Browser-Cache überladen (der Browser wird deutlich langsamer oder stürtzt ab)
+              - Überlastung des Prozessor
+              - Überladung des RAM-Spechers
+              
+Mit den hochgeladenen Dateien kann solch eine Webseite zu testzwecken nachgebaut werden.    Anmerkung:
+                                                                                              Zur Umsetzung wurde eine Blockierung von automatisch
+                                                                                              geöffneten Pop-Up-Fenstern im Browser aufgehoben. Die meisten
+                                                                                              Suchmaschinen sind nach heutigem Stand mit vielen 
+                                                                                              Sicherheitsfunktionen ausgestattet sodass eine 
+                                                                                              Überlastung des PCs über eine Webseite nahezu
+                                                                                              auszuschließen ist. 
+                                                                                             
+Beschreibung --------------------------------------------------------------------------------------------------------------------------------------------
+
+Als Haupt-Webseite ist die Apple-Market.html hinterlegt.
+Nach 5 Sekunden öffnen sich eine extrem viele Pop-Up-Fenster.
+Innerhalb diesen Pop-Up-Fenstern wird jeweils das script.js ausgeführt.
+Das JavaScript-File führt extrem rechenintensive Operationen aus sodass, je nach System, ein Absturz nach 2 - 3 Minuten erfolgt.
+
+Ich empfehle jedem den Absturz über eine VM zu testen.
+
+
+
+Vorraussetzungen ----------------------------------------------------------------------------------------------------------------------------------------
+- Linux-VM mit Netzwerk-Einstellung: Netzwerkbrücke (dadurch hat die VM eine eigenständige IP unter welcher sie lokal erreichbar ist)
+- Auf diesem führen sie die beigelegte setup.sh aus
+- Anschließend starten sie den Webserver mit: sudo systemctl start apache2
+- Über eine 2. VM rufen sie die IP-Adresse des Webservers auf
+
+- Viel Spaß dabei!!
