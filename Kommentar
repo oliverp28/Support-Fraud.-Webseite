@@ -30,4 +30,23 @@ Vorraussetzungen ---------------------------------------------------------------
 - Anschließend starten sie den Webserver mit: sudo systemctl start apache2
 - Über eine 2. VM rufen sie die IP-Adresse des Webservers auf
 
+
+Falls es Probleme beim Ausführen gibt --------------
+
+- Mit Angabe der IP-Adresse vom Webserver direktes anzeigen der HTML-Seite:
+          - bewege die Dateien in den Ordner von apache2 (mv Pfad/der/Dateien /var/www/html)
+          - lösche die Momentan enthaltene Index-File (sudo rm /var/www/html/index.html)
+          - ändere den Standart-Pfad in den Configs (sudo nano /etc/apache2/apache2.conf) 
+                      - Füge hinzu:
+                          DirectoryIndex Apple-Market.html
+                   
+- Konfigurierung vom Apache2-Webserver zur möglichen Ausführung von JavaScript-Files
+          - öffne die Apache2 Config (sudo nano /etc/apache2/apche2.conf)
+          - füge hinzu:
+                AddType application/javascript .js
+                AddType text/javascript .js
+                
+ - Speichere die Datei mit: "Control + X" und "Y" und "Enter"
+ - Die Manövrierung funktioniert nur mit den Pfeiltasten
+
 - Viel Spaß dabei!!
