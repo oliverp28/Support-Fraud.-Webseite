@@ -11,16 +11,16 @@ Mit den hochgeladenen Dateien kann solch eine Webseite zu testzwecken nachgebaut
                                                                                               Suchmaschinen sind nach heutigem Stand mit vielen 
                                                                                               Sicherheitsfunktionen ausgestattet sodass eine 
                                                                                               Überlastung des PCs über eine Webseite nahezu
-                                                                                              auszuschließen ist. 
+                                                                                              ausgeschlossen ist. 
                                                                                              
 Beschreibung ------------------------------------------------------------------------------------------------
 
 Als Haupt-Webseite ist die Apple-Market.html hinterlegt.
-Nach 5 Sekunden öffnen sich eine extrem viele Pop-Up-Fenster.
-Innerhalb diesen Pop-Up-Fenstern wird jeweils das script.js ausgeführt.
-Das JavaScript-File führt extrem rechenintensive Operationen aus sodass, je nach System, ein Absturz nach 2 - 3 Minuten erfolgt.
+Nach 5 Sekunden öffnen sich viele Pop-Up-Fenster.
+Innerhalb dieser Pop-Up-Fenstern wird jeweils die Datei script.js ausgeführt.
+Das JavaScript-File führt rechenintensive mathematische Operationen aus sodass, je nach System, ein Absturz nach 2 - 3 Minuten erfolgt.
 
-Ich empfehle jedem den Absturz über eine VM zu testen.
+Ich empfehle jedem den Absturz wenn dann über eine VM zu testen.
 
 
 
@@ -35,8 +35,8 @@ Falls es Probleme beim Ausführen gibt --------------
 
 - Mit Angabe der IP-Adresse vom Webserver direktes anzeigen der HTML-Seite:
           - bewege die Dateien in den Ordner von apache2 (mv Pfad/der/Dateien /var/www/html)
-          - lösche die Momentan enthaltene Index-File (sudo rm /var/www/html/index.html)
-          - ändere den Standart-Pfad in den Configs (sudo nano /etc/apache2/apache2.conf) 
+          - lösche die momentan enthaltene Index-File (sudo rm /var/www/html/index.html)
+          - ändere den Standard-Pfad in den Configs (sudo nano /etc/apache2/apache2.conf) 
                       - Füge hinzu:
                           DirectoryIndex Apple-Market.html
                    
