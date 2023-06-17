@@ -13,7 +13,7 @@ Mit den hochgeladenen Dateien kann solch eine Webseite zu testzwecken nachgebaut
                                                                                               Überlastung des PCs über eine Webseite nahezu
                                                                                               auszuschließen ist. 
                                                                                              
-Beschreibung -------------------------------------------------------------------------------------------------------------------
+Beschreibung ------------------------------------------------------------------------------------------------
 
 Als Haupt-Webseite ist die Apple-Market.html hinterlegt.
 Nach 5 Sekunden öffnen sich eine extrem viele Pop-Up-Fenster.
@@ -24,7 +24,7 @@ Ich empfehle jedem den Absturz über eine VM zu testen.
 
 
 
-Vorraussetzungen -----------------------------------------------------------------------------------------------------------------
+Vorraussetzungen ---------------------------------------------------------------------------------------------
 - Linux-VM mit Netzwerk-Einstellung: Netzwerkbrücke (dadurch hat die VM eine eigenständige IP unter welcher sie lokal erreichbar ist)
 - Auf diesem führen sie die beigelegte setup.sh aus
 - Anschließend starten sie den Webserver mit: sudo systemctl start apache2
