@@ -5,13 +5,16 @@
               - Überlastung des Prozessor
               - Überladung des RAM-Spechers
               
-    Mit den hochgeladenen Dateien kann solch eine Webseite zu testzwecken nachgebaut werden.    Anmerkung:
-                                                                                              Zur Umsetzung wurde eine Blockierung von automatisch
-                                                                                              geöffneten Pop-Up-Fenstern im Browser aufgehoben. Die meisten
-                                                                                              Suchmaschinen sind nach heutigem Stand mit vielen 
-                                                                                              Sicherheitsfunktionen ausgestattet sodass eine 
-                                                                                              Überlastung des PCs über eine Webseite nahezu
-                                                                                              ausgeschlossen ist. 
+    Mit den hochgeladenen Dateien kann solch eine Webseite zu testzwecken nachgebaut werden.    
+    
+    Anmerkung:
+                                                                                             
+    Zur Umsetzung wurde eine Blockierung von automatisch
+    geöffneten Pop-Up-Fenstern im Browser aufgehoben. Die meisten
+    Suchmaschinen sind nach heutigem Stand mit vielen 
+    Sicherheitsfunktionen ausgestattet sodass eine 
+    Überlastung des PCs über eine Webseite nahezu
+    ausgeschlossen ist. 
                                                                                              
     Beschreibung ------------------------------------------------------------------------------------------------
 
@@ -49,4 +52,4 @@
      - Speichere die Datei mit: "Control + X" und "Y" und "Enter"
      - Die Manövrierung funktioniert nur mit den Pfeiltasten
 
-Viel Spaß dabei!!
+    Viel Spaß dabei!!
