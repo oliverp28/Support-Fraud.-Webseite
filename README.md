@@ -1,55 +1,48 @@
-    In diesem Projekt wurde eine Webseite im Berreich Support-Fraud nachgebaut.
-    Bei diesem Phänomen wird Betroffen auf Webseiten eine vermeintliche Virusinfizierung ihres Computers suggeriert.
-    Damit die Authentizität gewahrt wird setzt die Täterschaft auf Möglichkeiten wie:
-              - Browser-Cache überladen (der Browser wird deutlich langsamer oder stürtzt ab)
-              - Überlastung des Prozessor
-              - Überladung des RAM-Spechers
-              
-    Mit den hochgeladenen Dateien kann solch eine Webseite zu testzwecken nachgebaut werden.    
-    
-    Anmerkung:
-                                                                                             
-    Zur Umsetzung wurde eine Blockierung von automatisch
-    geöffneten Pop-Up-Fenstern im Browser aufgehoben. Die meisten
-    Suchmaschinen sind nach heutigem Stand mit vielen 
-    Sicherheitsfunktionen ausgestattet sodass eine 
-    Überlastung des PCs über eine Webseite nahezu
-    ausgeschlossen ist. 
-                                                                                             
-    Beschreibung ------------------------------------------------------------------------------------------------
+# Support Fraud Simulation
 
-    Als Haupt-Webseite ist die Apple-Market.html hinterlegt.
-    Nach 5 Sekunden öffnen sich viele Pop-Up-Fenster.
-    Innerhalb dieser Pop-Up-Fenstern wird jeweils die Datei script.js ausgeführt.
-    Das JavaScript-File führt rechenintensive mathematische Operationen aus sodass, je nach System, ein Absturz nach 2 - 3 Minuten erfolgt.
+This project involves the replication of a website within the realm of Support Fraud. Victims are deceived into believing that their computer is infected with a virus when accessing such websites. To maintain authenticity, the perpetrators employ tactics such as:
 
-    Ich empfehle jedem den Absturz wenn dann über eine VM zu testen.
+- Overloading browser cache (slowing down or crashing the browser)
+- Processor overload
+- RAM memory overload
 
-![Webseite](Scam-Webseite.png)
+The uploaded files allow the recreation of such a website for testing purposes.
 
-    Vorraussetzungen ---------------------------------------------------------------------------------------------
-    - Linux-VM mit Netzwerk-Einstellung: Netzwerkbrücke (dadurch hat die VM eine eigenständige IP unter welcher sie lokal erreichbar ist)
-    - Auf diesem führen sie die beigelegte setup.sh aus
-    - Anschließend starten sie den Webserver mit: sudo systemctl start apache2
-    - Über eine 2. VM rufen sie die IP-Adresse des Webservers auf
+**Note:**
+The automatic opening of pop-up windows in the browser has been unblocked for implementation purposes. Most search engines are equipped with numerous security features today, making it nearly impossible to overload a PC via a website.
 
+## Description
 
-    Falls es Probleme beim Ausführen gibt --------------
+The main webpage is stored in `Apple-Market.html`. After 5 seconds, numerous pop-up windows open. Each of these windows executes the `script.js` file. The JavaScript file performs computationally intensive mathematical operations, leading to a system crash in 2-3 minutes, depending on the system. It is recommended to test the crash in a virtual machine (VM).
 
-    - Mit Angabe der IP-Adresse vom Webserver direktes anzeigen der HTML-Seite:
-              - bewege die Dateien in den Ordner von apache2 (mv Pfad/der/Dateien /var/www/html)
-              - lösche die momentan enthaltene Index-File (sudo rm /var/www/html/index.html)
-              - ändere den Standard-Pfad in den Configs (sudo nano /etc/apache2/apache2.conf) 
-                          - Füge hinzu:
-                             DirectoryIndex Apple-Market.html
-                   
-    - Konfigurierung vom Apache2-Webserver zur möglichen Ausführung von JavaScript-Files
-              - öffne die Apache2 Config (sudo nano /etc/apache2/apche2.conf)
-              - füge hinzu:
-                    AddType application/javascript .js
-                    AddType text/javascript .js
-                
-     - Speichere die Datei mit: "Control + X" und "Y" und "Enter"
-     - Die Manövrierung funktioniert nur mit den Pfeiltasten
+![Webpage](Scam-Webseite.png)
 
-    Viel Spaß dabei!!
+## Prerequisites
+
+- Linux VM with network settings: Bridged Network (providing the VM with a standalone IP locally)
+- Execute the included `setup.sh` on this VM
+- Start the webserver with: `sudo systemctl start apache2`
+- Access the IP address of the webserver from a second VM
+
+## Troubleshooting
+
+### Issues with Execution
+
+- Directly display the HTML page with the webserver's IP address:
+  - Move the files to the apache2 folder (`mv path/to/files /var/www/html`)
+  - Delete the current index file (`sudo rm /var/www/html/index.html`)
+  - Change the default path in the configs (`sudo nano /etc/apache2/apache2.conf`)
+    - Add: `DirectoryIndex Apple-Market.html`
+
+### Apache2 Configuration for JavaScript File Execution
+
+- Open the Apache2 config (`sudo nano /etc/apache2/apche2.conf`)
+- Add:
+  ```
+  AddType application/javascript .js
+  AddType text/javascript .js
+  ```
+- Save the file with: "Control + X," "Y," and "Enter"
+- Navigate only with arrow keys
+
+Enjoy exploring the simulation responsibly!
